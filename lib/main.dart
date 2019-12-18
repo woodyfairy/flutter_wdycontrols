@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Wdy Contrls Demo"),),
+      appBar: AppBar(title: Text("Wdy Controls Demo"),),
       body: ListView(
           children: ListTile.divideTiles(
               context: context,
