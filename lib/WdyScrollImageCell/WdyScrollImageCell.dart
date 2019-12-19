@@ -4,7 +4,7 @@ class WdyScrollImageCell extends StatelessWidget {
   final String imageUrl;
   final double height;
   final ScrollController controller;
-  WdyScrollImageCell({this.imageUrl, this.height, this.controller}) : super(key : GlobalKey());
+  WdyScrollImageCell({Key key, this.imageUrl, this.height, this.controller}) : assert(key == null || key is GlobalKey) ,super(key : key ?? GlobalKey());
 
   final ScrollController _innertController = ScrollController();
   Image image;
