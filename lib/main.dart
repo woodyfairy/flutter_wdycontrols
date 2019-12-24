@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'WdyScrollImageCell/WdyScrollImageCell_DemoView.dart';
+import 'WdyWaveView/WdyWaveView_DemoView.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,6 +35,17 @@ class Home extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context){
                           return WdyScrollImageCell_DemoView();
+                        }
+                    ));
+                  },
+                ),
+                ListTile(
+                  title: Text("Wave View"),
+                  trailing: Icon(Icons.navigate_next),
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context){
+                          return WdyWaveView_DemoView();
                         }
                     ));
                   },
