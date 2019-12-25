@@ -82,11 +82,12 @@ class Wave extends CustomPainter {
 
       var paint = Paint()
         ..color = color
-        ..style = PaintingStyle.fill;
+        ..style = PaintingStyle.fill
+        ..shader = gradient.createShader(Rect.fromLTRB(0, 0, size.width, size.height));
 
       canvas.drawPath(
         path,
-        paint..shader = gradient.createShader(Rect.fromLTRB(0, 0, size.width, size.height)),
+        paint,
       );
     }
   }
