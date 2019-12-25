@@ -7,7 +7,7 @@ class WdyScrollImageCell_DemoView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ScrollImageCell Demo"),),
+      appBar: AppBar(title: Text("WdyScrollImageCell"),),
       body: ListView.builder(
           controller: controller,
           itemCount: 50,
